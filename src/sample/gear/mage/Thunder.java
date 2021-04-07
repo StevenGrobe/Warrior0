@@ -1,6 +1,6 @@
 package sample.gear.mage;
 
-import sample.gear.Weapon;
+import sample.gear.war.Weapon;
 
 public class Thunder extends Weapon {
     public Thunder () {

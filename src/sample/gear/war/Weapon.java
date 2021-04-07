@@ -1,4 +1,4 @@
-package sample.gear;
+package sample.gear.war;
 
 import sample.player.Player;
 

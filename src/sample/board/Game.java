@@ -6,6 +6,7 @@ import sample.monster.Warlock;
 import sample.player.Player;
 
 import java.util.ArrayList;
+import java.util.Collections;
 
 public class Game {
     private ArrayList<Case> boardList;
@@ -20,19 +21,22 @@ public class Game {
     }
 
     public void fillBoard() {
-        boardList.add(new EmptyCase());
-        boardList.add(new WelcomeCase());
-          for(int i = 0; i < 7; i++) {
-              boardList.add(new Gobelin());
-              boardList.add(new Gobelin());
-              boardList.add(new EmptyCase());
-              boardList.add(new Warlock());
-              boardList.add(new EmptyCase());
-              boardList.add(new Gobelin());
-              boardList.add(new Warlock());
-              boardList.add(new EmptyCase());
-              boardList.add(new Dragon());
-          }
+        for (int i = 0; i < 30; i++) {
+            boardList.add(new Gobelin());
+        }
+
+        for (int i = 0; i < 20; i++) {
+            boardList.add(new Warlock());
+        }
+
+        for (int i = 0; i < 10; i++) {
+            boardList.add(new EmptyCase());
+        }
+        for (int i = 0; i < 5; i++) {
+            boardList.add(new Dragon());
+        }
+        Collections.shuffle(boardList);
+        boardList.set(1, new WelcomeCase());
         System.out.println(boardList.get(dude.getPosition()));
     }
 

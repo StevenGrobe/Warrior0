@@ -3,7 +3,7 @@ package sample.monster;
 import sample.board.Case;
 import sample.player.Player;
 
-public class Monster extends Case {
+public abstract class Monster extends Case {
     private String mobName;
     private int mobHp;
     private int mobAtk;
@@ -31,6 +31,8 @@ public class Monster extends Case {
     public int getMobHp() {
         return mobHp;
     }
+
+    public  abstract void mobAttack();
 
     @Override
     public String toString() {
