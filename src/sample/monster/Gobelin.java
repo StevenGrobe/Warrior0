@@ -7,11 +7,9 @@ public class Gobelin extends Monster {
         setMobName("Goblin");
         setMobHp(6);
         setMobAtk(1);
-        mobAttack();
     }
 
-    @Override
     public void mobAttack() {
-        System.out.println("use his claws");
+        System.out.println(getMobName() + " use his claws");
     }
 }

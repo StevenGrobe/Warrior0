@@ -7,11 +7,9 @@ public class Warlock extends Monster {
         setMobName("Warlock");
         setMobHp(9);
         setMobAtk(2);
-        mobAttack();
     }
 
-    @Override
     public void mobAttack() {
-        System.out.println("use dark magic");
+        System.out.println(getMobName() + " use dark magic");
     }
 }

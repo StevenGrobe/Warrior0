@@ -50,6 +50,7 @@ public abstract class Monster extends Case {
 
             if (getMobHp() > 0) {
                 dude.setDudeHp(dude.getDudeHp() - getMobAtk());
+                mobAttack();
                 System.out.println("You lost " + getMobAtk() + " hp to " + getMobName() +
                         "\n" + dude.getName() + " = " + dude.getDudeHp());
                 System.out.println(getMobName() + " = " + getMobHp());

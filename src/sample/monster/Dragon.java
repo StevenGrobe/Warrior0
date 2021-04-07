@@ -7,12 +7,9 @@ public class Dragon extends Monster {
         setMobName("Dragon");
         setMobHp(15);
         setMobAtk(4);
-        mobAttack();
 
     }
-
-    @Override
     public void mobAttack() {
-        System.out.println("throw fire");
+        System.out.println(getMobName() + " throw fire");
     }
 }
