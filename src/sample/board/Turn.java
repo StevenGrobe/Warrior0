@@ -14,13 +14,7 @@ public class Turn extends Case {
         int diceResult = dice.throwDice();
         dude.setPosition(dude.getPosition() + diceResult);
         System.out.println("dice = " + diceResult);
-        if (dude.getPosition() > 64) {
-            System.out.println("dude position = 64");
-            System.out.println("** End ** ");
-        } else {
-            System.out.println("dude position = " + dude.getPosition());
-
-        }
+        System.out.println("dude position = " + dude.getPosition());
     }
 
     public Turn (Player dude) {

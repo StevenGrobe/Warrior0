@@ -32,7 +32,7 @@ public abstract class Monster extends Case {
         return mobHp;
     }
 
-    public  abstract void mobAttack();
+    public abstract void mobAttack();
 
     @Override
     public String toString() {

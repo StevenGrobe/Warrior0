@@ -4,7 +4,6 @@ import sample.player.Player;
 
 public class Mage extends Player {
     public Mage() {
-        super();
         setMinHp(3);
         setMaxHp(7);
         setMinAtk(8);

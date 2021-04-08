@@ -4,7 +4,7 @@ import sample.board.Case;
 
 public class Dice extends Case {
     private int diceMin = 1;
-    private int diceMax = 6;
+    private int diceMax = 7;
 
     public int getDiceMin() {
         return diceMin;
